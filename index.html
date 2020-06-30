@@ -1,0 +1,46 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>24i Google Website</title>
+		<link rel="stylesheet" href="src/css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Google Search Page</h1>
+		</header>
+
+		<article>
+			<div id="searchFormDiv">
+				<form id="searchForm">
+					<input type="text" name="search" id="inputField" />
+					<button type="submit">Search</button>
+				</form>
+			</div>
+
+			<div id="webResultsDiv">
+				<h2>Web Results</h2>
+				<ul id="webResults"></ul>
+				<div id="webPagination">
+					<button type="button" name="prevPageBtn" id="prevPageBtn">
+						Go to previous page
+					</button>
+					<button type="button" name="nextPageBtn" id="nextPageBtn">
+						Go to next page
+					</button>
+				</div>
+			</div>
+
+			<div id="imgResultsDiv">
+				<h2>Image Results</h2>
+				<ul id="imgResults"></ul>
+			</div>
+		</article>
+
+		<footer>
+			Created by Jakub Honig @ 2020
+		</footer>
+		<script src="src/config.js"></script>
+		<script src="src/index.js"></script>
+	</body>
+</html>
