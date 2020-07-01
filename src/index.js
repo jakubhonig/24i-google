@@ -11,7 +11,10 @@ const url = `https://www.googleapis.com/customsearch/v1?key=${config.API_KEY}&cx
 let activePage = 1;
 
 async function performSearch(e) {
-	e.preventDefault();
+	if (e && e.type === 'submit') {
+		e.preventDefault();
+	}
+
 	clearDivs();
 	let query = inputField.value;
 
